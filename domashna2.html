@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Pizza Shop 2.0</title>
+        <link rel= "stylesheet" type = "text/css"
+        href= "domashna2.css">
+    </head>
+<h1>
+    Welcome
+</h1>
+    <body>
+        <form method="post" action=#>
+        <table border = "1" class="center">
+            <thread>
+                <tr>
+                    <th colspan="3">
+                        Pizza Shop 2.0
+                    </th>
+                </tr>
+            </thread>
+            <tbody>
+                <tr>
+                    <td>
+                        Name
+                    </td>
+                    <td colspan="2">
+                        <input type="text" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        Pizza Topping
+                    </td>
+                    <td  colspan="2">
+                        <input type="radio" name="topping" value="supreme"><label>Supreme</label><br>
+                        <input type="radio" name="topping" value="vegetarian"><label>Vegetarian</label><br>
+                        <input type="radio" name="topping" value="hawaiian"><label>Hawaiian</label></td>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Pizza Sauce
+                    </td>
+                    <td colspan="2">
+                        <select name="sauce">
+                            <option selected>Tomato</option>
+                            <option>BBQ</option>
+                            <option>Pesto</option>   
+                            <option>Ranch</option>
+                        </select>
+                    </td>  
+                </tr>
+                <tr>
+                    <td>
+                        Optional Extras
+                    </td>
+                    <td>
+                        <input type="checkbox" name="options" value="extra cheese"><label>Extra Cheese</label>
+                        <input type="checkbox" name="options" value="gluten free"><label>Gluten Free Base</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                    <label>Delivery instructions:</label>
+                    <br>
+                    <textarea cols="60" rows="5" name="instructions"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="submit" value="Send My Order">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </form>
+    </body>
+</html>
