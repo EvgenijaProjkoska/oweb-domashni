@@ -1,0 +1,25 @@
+<ng-template #noImg>
+  <p>No image</p>
+</ng-template>
+<div [ngClass]="klasi()" [ngStyle]="{'text-decoration' : getDecoration(), 'color' : getColor()}">
+  <div class="course-title">
+    {{reden+'. '+vozac.name}}
+  </div>
+  <img [src]="vozac.iconUrl" width="250px" *ngIf="vozac.iconUrl; else noImg">
+
+  <div class="course-category" [ngSwitch]="vozac.category">
+    <div class="category" *ngSwitchCase="'BEGINNER'">Beginner</div>
+    <div class="category" *ngSwitchCase="'ADVANCED'">Advanced</div>
+    <div class="category" *ngSwitchDefault>No license</div>
+  </div>
+
+  <div class="course-description">
+    {{vozac.team}}
+  </div>
+  
+  <div>
+    Points: {{vozac.points}}
+  </div>
+
+  <button (click)="klik()">Click me</button>
+</div>
